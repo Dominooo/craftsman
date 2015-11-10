@@ -1,0 +1,43 @@
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="http://i.imgur.com/9ReCCDh.png" alt="PlayerOneTrent Image">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="">Header Item</a></li>
+        <li class="nav-link"><a href="">Header Item</a></li>
+        <li class="nav-link more"><a href="javascript:void(0)">Header Item</a>
+          <ul class="submenus">
+            <li><a href="">Header Item</a></li>
+            <li><a href="">Header Item</a></li>
+            <li><a href="">Header Item</a></li>
+          </ul>
+        </li>
+        <li ng-show="loggedin" class="nav-link"><a ng-click="logout()" href="">Logout</a>
+        <li ng-show="loggedout" class="nav-link">
+          <div class="modal">
+        <label for="modal-1">
+          <div class="modal-trigger">Login</div>
+        </label>
+        <input class="modal-state" id="modal-1" type="checkbox" />
+        <div class="modal-fade-screen">
+          <div class="modal-inner">
+            <div class="modal-close" for="modal-1"></div>
+              <div class="modal-citizen">
+              <p>Administrator Login</p>
+              <input ng-model="email" type="email" placeholder="email">
+              <input ng-model="password" type="password" placeholder="password">
+              <!--<a href="admin.html"><button type="submit">Submit</button></a>-->
+              <button ng-click="logging()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </li>
+        <li ng-show="loggedin" class="nav-link"><a href="admin.html">ADMIN</a>
+      </ul>
+    </nav>
+  </div>
+</header>
